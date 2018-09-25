@@ -43,6 +43,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .pad-r-0 {
   padding-right: 0;
 }
+.w100 {
+  width: 100%;
+}
 ul, li {
   margin: 0;
   padding: 0;
@@ -198,10 +201,18 @@ ul, li {
 .main-article:first-line {
   line-height: 1em;
 } */
-.article-gallery {
-  shape-outside: content-box;
-  margin-top: 200px;
+.article-gallery{
+  /* shape-outside: content-box; */
   background:greenyellow;
+  display: flex;
+  flex-direction: row;
+
+
+}
+.article-gallery li {
+  margin-right: 1rem;
+  text-decoration: none;
+  list-style: none;
 }
 .full-width {
   width: 100vw;

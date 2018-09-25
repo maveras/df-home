@@ -137,8 +137,10 @@
         </div>
         <div class="main-content row">
           <div class="col-md-10 col-md-offset-1">
+            <!-- article section 1 -->
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-md-7">
+                <!-- Author Article details -->
                 <div class="row">
                   <div class="col-md-4 category">
                     <span>Home / Decoracion</span>
@@ -152,27 +154,121 @@
                     <span>Por Juan Jose Richards </span>
                   </div>
                 </div>
+                 <!--  -->
                 <div class="row">
+                  <!-- article resume -->
                   <div class="col-md-12 resume">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, atque culpa, qui libero blanditiis ipsum iste suscipit, a laudantium voluptatem cum sunt optio nesciunt temporibus facere placeat itaque dolores. Molestias!
                   </div>
+                  <!--  -->
+                  <!-- article part 1 -->
                   <div class="col-md-12">
-                    <div class="article-gallery f-l full-width">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur animi reprehenderit deleniti illum? At nulla, officiis deleniti possimus sed similique! Nisi rerum dicta, obcaecati praesentium odio labore maiores cum esse!
-                        <span>sadjkaslkjdsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium, tenetur odio nostrum adipisci dolorum nulla maiores architecto, quae nihil possimus incidunt debitis eveniet fugiat ipsum quisquam accusantium dolor beatae!</span>
-                      </div>
                     <p class="main-article">el mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam in el mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam in.
                     </p>
                   </div>
+                  <!--  -->
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-5">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quam, modi itaque labore vitae porro omnis nulla rem harum aspernatur fugiat rerum quia quod aut sequi error saepe. Enim, eligendi?</p>
+              </div>
+            </div>
+            <!-- article gallery -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="article-gallery">
+                  <li>
+                    <img src="" alt="">asdas
+                  </li>
+                  <li>
+                    <img src="" alt="">asdasd
+                  </li>
+                  <li>
+                    <img src="" alt="">asdasd
+                  </li>
+                  <li>
+                    <img src="" alt="">asdassadss
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  -->
+            <!-- article section 2 -->
+            <div class="row">
+              <div class="col-md-7">
+                <!-- article part 2 -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="main-article-2">el mainnnnn 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam in el mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam in.
+                    </p>
+                  </div>
+
+                </div>
+                <!--  -->
+                <!-- article image -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <img class="w100"src="https://css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg" alt="">
+                  </div>
+                </div>
+                <!--  -->
+                <!-- article part 3 -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="main-article-2">el main officia quam in.
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="col-md-5">
+                <p>banner 2</p>
+              </div>
+            </div>
+            <!-- banner -->
+            <div class="row">
+              <div class="col-md-12">
+                <img class="w100" src="https://css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg" alt="">
+              </div>
+            </div>
+            <!--  -->
+            <!-- related section -->
+            <div class="row">
+              <div class="col-md-12 related-articles">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3 class="related-article-title">Articulos Relacionados</h3>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="related-article-item col-xs-6">
+                        <div class="related-article-item__img">
+                          <img class="w100"src="https://css-tricks.com/wp-content/uploads/2014/05/flex-wrap.svg" alt="">
+                        </div>
+                        <div class="related-article-item__title">
+                          <h3>edicion torno al arte</h3>
+                        </div>
+                      </div>
+                      <div class="related-article-item col-xs-6">
+                        <div class="related-article-item__img">
+                          <img class="w100"src="https://css-tricks.com/wp-content/uploads/2014/05/flex-wrap.svg" alt="">
+                        </div>
+                        <div class="related-article-item__title">
+                          <h3>edicion torno al arte</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- footer -->
+      <footer class="col-xs-12">
+        <h4>el contenido del footer</h4>
+      </footer>
       <button @click="hideFirstMenu = !hideFirstMenu">cloick<button>
       <button @click="setScroller">setscrolcloick<button>
       <button @click="hideMovilMenu = !hideMovilMenu">showMenu<button>
