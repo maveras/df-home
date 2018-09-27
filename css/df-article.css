@@ -315,12 +315,30 @@ list-menu li a {
     line-height: 0.8;
     text-transform: uppercase;
 }
+.related-articles__title {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  font-weight: bold;
+}
 .related-articles__title__undeline {
   border-bottom: solid 5px #353535;
   width: 10%;
   margin-bottom: 6rem;
 }
 
+.bottom-banner {
+  margin: 3rem auto;
+}
+
+.related-article__title {
+  padding: 2rem 0 2rem 0;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2rem;
+}
+.related-article__title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 /* .main-article::first-letter {
   color: #B2726C;
   float: left;
@@ -346,9 +364,7 @@ list-menu li a {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.bottom-banner {
-  margin: 0px auto;
-}
+
 .owl-caroausel{
    height:50vh;
 }
