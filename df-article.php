@@ -8,24 +8,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i|PT+Serif+Caption:400,400i|PT+Serif:400,400i,700,700i|family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Martel:200,300,400,600,700,800,900" rel="stylesheet">
-      
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i|PT+Serif+Caption:400,400i|PT+Serif:400,400i,700,700i|family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Martel:200,300,400,600,700,800,900" rel="stylesheet">
     <!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <!-- owl-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- owl-->
 
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-      <link rel="stylesheet" type="text/css" href="<?php print_r(
-          get_bloginfo('stylesheet_directory') )?>/css/df-article.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php print_r(get_bloginfo('stylesheet_directory') )?>/css/df-article.css">
 </head>
   <title>article</title>
   <body>
@@ -105,6 +105,7 @@
             <img class=""src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Grib_skov.jpg" alt="">
           </div>
         </div>
+        <!-- article section 1 -->
         <div class="main-content row">
           <div class="col-md-10 col-md-offset-1">
             <!-- article section 1 -->
@@ -143,28 +144,71 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quam, modi itaque labore vitae porro omnis nulla rem harum aspernatur fugiat rerum quia quod aut sequi error saepe. Enim, eligendi?</p>
               </div>
             </div>
-            <!-- article gallery -->
           </div>
         </div>
       </div>
+      <!-- galeria -->
       <div class="row article-gallery">
         <div class="col-md-12">
-          <ul class="">
-            <li>
-              <img src="" alt="">asdas
+          <ul class="owl-carousel">
+            <li class="article-gallery__item">
+              <img src="https://www.capital.cl/wp-content/uploads/2018/09/Econotes478.png" alt="">
             </li>
-            <li>
-              <img src="" alt="">asdasd
+            <li class="article-gallery__item">
+              <img src="https://www.capital.cl/wp-content/uploads/2018/09/gente-1.jpg" alt="">
             </li>
-            <li>
-              <img src="" alt="">asdasd
+            <li class="article-gallery__item">
+              <img src="https://www.capital.cl/wp-content/uploads/2018/09/Econotes478.png" alt="">
             </li>
-            <li>
-              <img src="" alt="">asdassadss
+            <li class="article-gallery__item">
+              <img src="https://www.capital.cl/wp-content/uploads/2018/09/gente-1.jpg" alt="">
+            </li>
+            <li class="article-gallery__item">
+              <img src="https://www.capital.cl/wp-content/uploads/2018/09/Econotes478.png" alt="">
+            </li>
+            <li class="article-gallery__item">
+              <img src="https://www.capital.cl/wp-content/uploads/2018/09/gente-1.jpg" alt="">
             </li>
           </ul>
         </div>
       </div>
+      <!-- article section 2 -->
+      <div class="container">
+        <div class="main-content row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="row">
+                  <!-- article section 2 -->
+                  <div class="col-md-12">
+                    <p class="">um distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quam, modi itaque labore vitae porro omnis nulla rem harum aspernatur fugiat rerum quia quod aut sequi error saepe. Enim, eligendi?
+                    </p>
+                  </div>
+                  <!--  -->
+                  <!-- article post image -->
+                  <div class="col-md-12">
+                    <div class="img-article">
+                      <img class="w100"src="https://www.capital.cl/wp-content/uploads/2018/08/Eco-notes-477.jpg" alt="">
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="col-md-12">
+                     <p class="">um distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quam, modi itaque labore vitae porro omnis nulla rem harum aspernatur fugiat rerum quia quod aut sequi error saepe. Enim, eligendi?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quam, modi itaque labore vitae porro omnis nulla rem harum aspernatur fugiat rerum quia quod aut sequi error saepe. Enim, eligendi?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-banner d-flex f-dr jc-sa">
+        <img src="https://cdn5.f-cdn.com/contestentries/1136976/18879954/59c3b49150eb2_thumb900.jpg" alt="">
+      </div>
+
       <!-- footer -->
       <footer class="col-xs-12">
         <h4>el contenido del footer</h4>
@@ -177,6 +221,8 @@
       </footer>
   </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 <script>
    $(document).ready(function(){
       $('.fade1').slick({
@@ -187,7 +233,11 @@
         // prevArrow:'<i class="material-icons slick-prev">navigate_before</i>',
         // nextArrow:'<i class="material-icons slick-next">navigate_next</i>',
       });
+      $(".owl-carousel").owlCarousel({
+        
+      });
     });
+    
 </script>
 <script>
   var app = new Vue({

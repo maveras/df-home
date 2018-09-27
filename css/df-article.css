@@ -275,7 +275,6 @@ ul, li {
 } */
 .article-gallery{
   /* shape-outside: content-box; */
-  background:greenyellow;
   display: flex;
   flex-direction: row;
 
@@ -285,6 +284,19 @@ ul, li {
   margin-right: 1rem;
   text-decoration: none;
   list-style: none;
+}
+.img-article {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.bottom-banner {
+  margin: 0px auto;
+}
+.owl-caroausel{
+   height:50vh;
+}
+.article-gallery__iteam {
+  max-height: 100%;
 }
 .full-width {
   width: 100vw;
