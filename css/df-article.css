@@ -277,8 +277,7 @@ ul, li {
   /* shape-outside: content-box; */
   display: flex;
   flex-direction: row;
-
-
+  margin-top: 1rem;
 }
 .article-gallery li {
   margin-right: 1rem;
