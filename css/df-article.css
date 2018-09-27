@@ -94,8 +94,12 @@ ul, li {
 .font-4 {
   font-family: 'Ariaal'
 }
+.font-5 {
+  font-family: 'Raleway';
+}
 .article-content {
-  font-family: 'Raleway'
+  font-family: 'Raleway';
+  font-size: 1.7rem;
 }
 .italic {
   font-style: italic
@@ -280,7 +284,7 @@ list-menu li a {
   padding-top: 1.5rem;
 }
 .resume {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #353535;
   margin-bottom: 1.5rem
 }
@@ -298,6 +302,9 @@ list-menu li a {
 }
 .draggable {
   box-shadow: 3px 3px 15px #888888;
+}
+.main-article {
+  font-size: 1.7rem;
 }
 .main-article:first-letter {
     font-size: 66px;
