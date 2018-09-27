@@ -91,6 +91,12 @@ ul, li {
 .font-3 {
   font-family: 'Martel'
 }
+.font-4 {
+  font-family: 'Ariaal'
+}
+.article-content {
+  font-family: 'Raleway'
+}
 .italic {
   font-style: italic
 }
@@ -109,7 +115,9 @@ ul, li {
   display: flex;
   align-items: center;
 }
-
+list-menu li a {
+  font-weight: bold;
+}
 .main-menu__first-list {
   display: flex;
   flex-direction: row;
@@ -251,6 +259,7 @@ ul, li {
 .main-title {
   font-size: 6rem;
   margin: 5rem;
+  font-family: 'Libre Baskerville', serif;
 }
 .slider-container {
   padding: 0 0 4rem 0
@@ -270,6 +279,12 @@ ul, li {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
+.resume {
+  font-size: 2rem;
+  color: #353535;
+  margin-bottom: 1.5rem
+}
+
 .bold {
   font-weight: bold
 }
@@ -283,6 +298,15 @@ ul, li {
 }
 .draggable {
   box-shadow: 3px 3px 15px #888888;
+}
+.main-article:first-letter {
+    font-size: 66px;
+    font-family: "Libre Baskerville", serif;
+    color: #B2726C;
+    float: left;
+    margin: 10px 10px 0 0;
+    line-height: 0.8;
+    text-transform: uppercase;
 }
 
 /* .main-article::first-letter {
