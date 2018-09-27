@@ -214,14 +214,14 @@
         <img src="images/970x200.png" alt="">
       </div>
 
-      <!-- footer -->
+      <!-- related articles -->
       <div class="row related-articles">
         <div class="container">
           <div class="col-md-10 col-md-offset-1 pad-l-0 d-flex fd-column">
             <h3 class="related-articles__title">Artículos Relacionados</h3>
             <div class="related-articles__title__undeline"></div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-5">
                 <a href="">
                   <div class="related-article">
                     <div class="relate-article__header">
@@ -233,7 +233,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-5 col-md-offset-2">
                 <div class="related-article">
                   <a href="">
                     <div class="relate-article__header">
@@ -250,12 +250,23 @@
 
         </div>
       </div>
+      <footer class="footer">
+        <div class="row">
+          <div class="col-md-7 footer__left">
+            <div class="col-md-12">
+              <img class="menu-second__logo" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg" alt="">
+            </div>
+            <div class="col-md-12 footer_submenu">
+
+            </div>
+          </div> 
+          <div class="col-md-5 footer__right"></div>
+        </div>
+      </footer>
       <button @click="hideFirstMenu = !hideFirstMenu">cloick<button>
       <button @click="setScroller">setscrolcloick<button>
       <button @click="hideMovilMenu = !hideMovilMenu">showMenu<button>
       <button @click="showSearchBar = !showSearchBar">showsearch<button>
-      <footer>
-      </footer>
   </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -271,10 +282,8 @@
         // nextArrow:'<i class="material-icons slick-next">navigate_next</i>',
       });
       $(".owl-carousel").owlCarousel({
-        
       });
     });
-    
 </script>
 <script>
   var app = new Vue({

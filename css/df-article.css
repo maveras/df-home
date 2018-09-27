@@ -339,6 +339,17 @@ list-menu li a {
   text-decoration: underline;
   cursor: pointer;
 }
+.footer {
+  background:#353535;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.footer__left {
+  border-right: 2px solid #F5F5F5
+}
+.footer_submenu {
+
+}
 /* .main-article::first-letter {
   color: #B2726C;
   float: left;
