@@ -138,6 +138,7 @@ ul, li {
   border-left: solid 1px #333333;
   padding-left: 1rem;
   margin-left: 2.5rem;
+  cursor: pointer;
 }
 .m-item {
   padding: 1.5rem;
