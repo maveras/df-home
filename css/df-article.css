@@ -10,9 +10,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-.nav-container{
-  background: #333333
-}
+
 .f-l {
   float: left;
 }
@@ -21,6 +19,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .d-flex {
   display:flex;
+}
+.f-dr {
+  flex-direction: row
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.fd-column {
+  flex-direction: column;
+}
+.ac-c {
+  align-content: center;
 }
 .ai-c {
   align-items: center;
@@ -42,6 +55,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .pad-r-0 {
   padding-right: 0;
+}
+.mar-l-0 {
+  margin-left: 0;
+}
+.mar-r-0 {
+  margin-right: 0;
 }
 .w100 {
   width: 100%;
@@ -74,9 +93,35 @@ ul, li {
     align-items: center;
     width: 100px;
 }
-
-.main-menu {
+.main-menu__first{
+  background: #333333;
+}
+.main-menu__first-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  align-items: center;
+}
+.first-menu-list__item{
+  color:#FEFEFE;
+  padding: .5rem;
+  border-right: 1px solid #FEFEFE;
+}
+.first-menu-list__item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.first-menu-list {
+  height: 3rem;
+}
+.main-menu__second {
   background: #DDDDDD;
+} 
+.m-item {
+  padding: 1.5rem;
+  list-style: none;
+  border-bottom: solid 1px #DDDDDD;
 }
 .main-menu-logo-container {
   align-items: center;
@@ -125,11 +170,7 @@ ul, li {
   top: 34px;
   left: 27px;
 }
-.m-item {
-  padding: 1.5rem;
-  list-style: none;
-  border-bottom: solid 1px #DDDDDD;
-}
+
 .m-menu__close {
   top: 0;
   right: 0;
@@ -162,10 +203,12 @@ ul, li {
 .sub-menu-list__item--bold {
   font-weight: 500;
 }
-.menu-container__sub-menu--line {
+.menu-second-top {
   border-bottom: solid 1px #333333;
 }
-
+.pad-menu {
+  padding: 2rem;
+}
 
 .nav-container-item-list__item {
   padding: .7rem;
@@ -187,10 +230,39 @@ ul, li {
   font-size: 6rem;
   margin: 5rem;
 }
+.slider-container {
+  padding: 0 0 4rem 0
+}
+.article-details{
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  margin-left: 0;
+}
+.publication-date {
+  color: #CD938F;
+  text-decoration: underline;
+
+}
+.publicated-by {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.bold {
+  font-weight: bold
+}
 .first-letter {
   font-size: 35px;
   line-height: 70px;
 }
+.slick-next:before, .slick-prev:before {
+  color: #BC6E6A;
+  font-size: 3rem;
+}
+.draggable {
+  box-shadow: 3px 3px 15px #888888;
+}
+
 /* .main-article::first-letter {
   color: #B2726C;
   float: left;
@@ -222,3 +294,4 @@ ul, li {
   margin-left: -50vw;
   margin-right: -50vw;
 }
+
