@@ -350,8 +350,63 @@ list-menu li a {
 .footer__left {
   border-right: 2px solid #F5F5F5
 }
-.footer_submenu {
+.footer__submenu {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 1rem 0 1rem 0;
+}
+.footer__submenu__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+.footer__submenu__list-item {
+  border-right: 2px solid white;
+  padding-right: .5rem;
+  font-size: 1.1rem;
+  margin-right: .5rem;
+  cursor: pointer;
+}
 
+.footer__submenu__list__item--no-margin  {
+  border: none;
+}
+.footer__submenu__list-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer__connect-to {
+  color:white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+}
+.footer__location {
+  color: #D6D6D6;
+  margin:1.5rem 0rem;
+}
+.connect__icon {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.fab {
+  display: inline-block;
+  border-radius: 50%;
+  color:black;
+  background-color: white;
+  padding: 0.6em 0.8em;
+}
+
+.i-fab--face-width {
+  padding: 0.6em 1em
+}
+.footer__right__title {
+  font-size: 2rem;
+  color: #888888;
+  padding-top: 2rem;
 }
 /* .main-article::first-letter {
   color: #B2726C;
@@ -363,6 +418,13 @@ list-menu li a {
 .main-article:first-line {
   line-height: 1em;
 } */
+.footer__links {
+  padding-top: 3.3rem;
+}
+.footer__links>ul>li>a{
+  color: #D6D6D6;
+
+}
 .article-gallery{
   /* shape-outside: content-box; */
   display: flex;
@@ -416,6 +478,7 @@ list-menu li a {
       background-color: white;
       border-radius: 5px;
     }
+    
 	}
 	/* Extra Small Devices, Phones */ 
 	@media only screen and (min-width : 480px) {
