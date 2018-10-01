@@ -35,7 +35,7 @@
   <title>article</title>
   <body>
   <div id="app">
-      <header>
+      <header class="pos-r">
         <!-- main menu -->
         <div class="container-fluid">
           <div class="row main-menu__first">
@@ -90,6 +90,14 @@
                 search
                 </i>
               </span>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid pos-a search-bar">
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="text" class="col-xs-10">
+              <input type="button" class="col-xs-2" value="Buscar">
             </div>
           </div>
         </div>
@@ -154,7 +162,7 @@
         </div>
       </div>
       <!-- galeria -->
-      <div class="container-fluid of-hidden article-gallery">
+      <!-- <div class="container-fluid of-hidden article-gallery">
         <div class="row">
           <div class="col-md-12">
             <div class="owl-carousel">
@@ -167,7 +175,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- article section 2 -->
       <div class="container">
         <div class="main-content row">
@@ -208,7 +216,7 @@
       <!-- related articles -->
       <div class="container related-articles">
         <div class="row">
-          <div class="col-md-10 col-md-offset-1 pad-l-0 d-flex fd-column">
+          <div class="col-md-10 col-md-offset-1 d-flex fd-column">
             <h3 class="related-articles__title">Artículos Relacionados</h3>
             <div class="related-articles__title__undeline"></div>
             <div class="row">
@@ -262,7 +270,7 @@
               </div>
             </div>
             <div class="row footer__connect-to">
-              <div class="col-md-6 connect_to_ed">
+              <div class="col-md-6 connect_to_ed bold font-1">
                 <span>CONECTATE A REVISTA ED</span>
               </div>
               <div class="col-md-6">
@@ -287,7 +295,7 @@
           </div>
           <div class="col-md-5 footer__right">
             <div class="row">
-              <div class="col-md-11 col-md-offset-1 footer__right__title">
+              <div class="col-md-11 font-1 bold col-md-offset-1 footer__right__title">
                 <span>GRUPO DF</span>
               </div>
             </div>
@@ -301,10 +309,10 @@
                 </ul>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-11 col-md-offset-1 d-flex">
-                <a href=""></a>
-                <a href=""></a>
+            <div class="row store-links__container">
+              <div class="col-md-11 col-md-offset-1 d-flex pad-l-0 store-links">
+                <a href="" class="store-links__item"><img src="images/icon-applestore.png" alt=""></a>
+                <a href="" class="store-links__item"><img src="images/icon-googleplay.png" alt=""></a>
               </div>
             </div>
           </div>
