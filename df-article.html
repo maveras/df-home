@@ -34,20 +34,18 @@
   <div id="app">
       <header>
         <!-- main menu -->
-        <div class="row">
+        <div class="container-fluid">
           <div class="row main-menu__first">
-            <div class="container">
-              <div class="col-md-4 col-md-offset-7 pad-r-0">
-                <ul class="main-menu__first-list">
-                  <li class="first-menu-list__item "><a href=""><img src="" alt=""></a>CURSOS ED </li>
-                  <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
-                  <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
-                </ul>
-              </div>
+            <div class="col-md-4 col-md-offset-7 pad-r-0">
+              <ul class="main-menu__first-list">
+                <li class="first-menu-list__item "><a href=""><img src="" alt=""></a>CURSOS ED </li>
+                <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
+                <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
+              </ul>
             </div>
           </div>
           <div class="row main-menu__second hidden-xs">
-            <div class="container d-flex fd-r ai-c">
+            <div class="d-flex fd-r ai-c">
               <div class="col-md-2 col-md-offset-1">
                 <img class="menu-second__logo" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg" alt="">
               </div>
@@ -77,9 +75,9 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="container-fluid">
           <div class="row main-menu__second visible-xs">
-            <div class="container d-flex fd-r jc-sa ai-c">
+            <div class="d-flex fd-r jc-sa ai-c">
               <span>
                 <i class="material-icons">menu</i>
               </span>
@@ -97,7 +95,7 @@
       <div class="container">
         <div class="row">
           <div class="title col-xs-12 font-1 ta-c italic">
-            <h1 class="main-title">Chacaclayo tradición artesanal</h1>
+            <h1 class="main-title "> tradición artesanal</h1>
           </div>
         </div>
         <div class="row slider-container">
@@ -153,28 +151,18 @@
         </div>
       </div>
       <!-- galeria -->
-      <div class="row article-gallery">
-        <div class="col-md-12">
-          <ul class="owl-carousel">
-            <li class="article-gallery__item">
+      <div class="container-fluid of-hidden article-gallery">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel">
               <img src="https://www.capital.cl/wp-content/uploads/2018/09/Econotes478.png" alt="">
-            </li>
-            <li class="article-gallery__item">
               <img src="https://www.capital.cl/wp-content/uploads/2018/09/gente-1.jpg" alt="">
-            </li>
-            <li class="article-gallery__item">
               <img src="https://www.capital.cl/wp-content/uploads/2018/09/Econotes478.png" alt="">
-            </li>
-            <li class="article-gallery__item">
               <img src="https://www.capital.cl/wp-content/uploads/2018/09/gente-1.jpg" alt="">
-            </li>
-            <li class="article-gallery__item">
               <img src="https://www.capital.cl/wp-content/uploads/2018/09/Econotes478.png" alt="">
-            </li>
-            <li class="article-gallery__item">
               <img src="https://www.capital.cl/wp-content/uploads/2018/09/gente-1.jpg" alt="">
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
       <!-- article section 2 -->
@@ -210,13 +198,13 @@
           </div>
         </div>
       </div>
-      <div class="bottom-banner d-flex f-dr jc-sa">
-        <img src="images/970x200.png" alt="">
+      <div class="container bottom-banner d-flex f-dr jc-sa">
+        <img class="w100" src="images/970x200.png" alt="">
       </div>
 
       <!-- related articles -->
-      <div class="row related-articles">
-        <div class="container">
+      <div class="container related-articles">
+        <div class="row">
           <div class="col-md-10 col-md-offset-1 pad-l-0 d-flex fd-column">
             <h3 class="related-articles__title">Artículos Relacionados</h3>
             <div class="related-articles__title__undeline"></div>
@@ -250,7 +238,7 @@
 
         </div>
       </div>
-      <footer class="footer">
+      <footer class="container-fluid footer">
         <div class="row">
           <div class="col-md-7 footer__left">
             <div class="col-md-12">
@@ -282,6 +270,22 @@
         // nextArrow:'<i class="material-icons slick-next">navigate_next</i>',
       });
       $(".owl-carousel").owlCarousel({
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          800: {
+            items: 2,
+            nav: false
+          },
+          1000: {
+            items: 3,
+            nav: false,
+            loop: false
+          }
+        }
       });
     });
 </script>
