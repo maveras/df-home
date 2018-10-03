@@ -466,7 +466,12 @@
           window.addEventListener('scroll', e => {
             this.prevY = this.currentY
             this.currentY = window.scrollY
-            if (this.prevY > this.currentY && this.currentY > headerHeight ) {
+            // if (this.prevY > this.currentY && this.currentY > headerHeight ) {
+            //   this.showTiny = true
+            // } else {
+            //   this.showTiny = false
+            // }
+            if (this.currentY > headerHeight ) {
               this.showTiny = true
             } else {
               this.showTiny = false
