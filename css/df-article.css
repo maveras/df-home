@@ -325,15 +325,32 @@ list-menu li a {
   position: fixed;
   color: red;
   z-index: 200;
-  background: white;
+  background: #DDDDDD;
   width: 200px;
   height: 100%;
   transform: translateX(0%);
   transition: all .1s ease;
+  box-shadow: 2px 2px 46px #333333;
 }
 
 .mobile-menu--closed {
   transform: translateX(-100%);
+  box-shadow: none;
+}
+.mobile-menu__logo {
+  padding: 2rem;
+  border-bottom: 1px solid #888888;
+  background: #333333;
+}
+.mobile-menu__logo > img{
+  width: 33%;
+}
+.mobile-menu--container {
+  margin: 1rem 0 1rem 0; 
+  border-bottom: solid 1px #888888;
+}
+.mobile-menu__list__item {
+  padding: 2rem;
 }
 /* fin mobile menu */
 .courtain--show {
@@ -384,9 +401,7 @@ list-menu li a {
   color: #BC6E6A;
   font-size: 3rem;
 }
-.draggable {
-  box-shadow: 3px 3px 15px #888888;
-}
+
 .main-article {
   font-size: 1.7rem;
 }

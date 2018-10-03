@@ -36,15 +36,25 @@
   <body>
     <div id="app" class="pos-r">
       <div class="mobile-menu" :class="{'mobile-menu--closed': hideMovilMenu}">
-        <ul>
-          <li>
-            <a href="">opcion1</a>
-            <a href="">opcion2</a>
-            <a href="">opcion3</a>
-            <a href="">opcion4</a>
-            <a href="">opcion5</a>
-          </li>
-        </ul>
+        <div class="mobile-menu__logo d-flex ai-c jc-sa">
+          <img class="" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg" alt="">
+        </div>
+        <div class="mobile-menu--container">
+          <ul class="mobile-menu__list d-flex fd-column">
+            <li class="mobile-menu__list__item"><a href="">NEWSLETTERS</a> </li>
+            <li class="mobile-menu__list__item"><a href="">EDICION DIGITAL</a> </li>
+            <li class="mobile-menu__list__item"><a href="">INICIAR SESIÓN</a> </li>
+          </ul>
+        </div>
+        <div class="mobile-menu--container">
+          <ul class="mobile-menu__list d-flex fd-column">
+            <li class="mobile-menu__list__item"><a href="">DECORACIÓN</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ARQUITECTURA</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ARTE Y DISEÑO</a> </li>
+            <li class="mobile-menu__list__item"><a href="">GOURMET</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ACTUALIDAD</a> </li>
+          </ul>
+        </div>
       </div>
       <div :class="{'fix-container': !hideMovilMenu}">
         <div class="courtain pos-a" @click="hideMovilMenu = !hideMovilMenu" :class="{'courtain--show': !hideMovilMenu}">
