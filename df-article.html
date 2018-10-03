@@ -59,7 +59,7 @@
       <div :class="{'fix-container': !hideMovilMenu}">
         <div class="courtain pos-a" @click="hideMovilMenu = !hideMovilMenu" :class="{'courtain--show': !hideMovilMenu}">
         </div>
-        <header class="">
+        <header class="header pos-r">
           <!-- main menu -->
           <div class="container-fluid pos-r z-index-10">
             <div class="row main-menu__first">
@@ -122,8 +122,34 @@
           <div class="container-fluid pos-a search-bar" :class="{'search-bar--show':showSearchBar}">
             <div class="row">
               <div class="col-xs-12">
-                <input type="text" placeholder="Buscar" class="search-bar__input col-xs-10">
-                <input type="button" class="col-xs-2 search-bar__button" value="Buscar">
+                <input type="text" placeholder="Buscar" class="search-bar__input col-xs-9">
+                <input type="button" class="col-xs-3 search-bar__button" value="Buscar">
+              </div>
+            </div>
+          </div>
+          <div class="tiny-header" :class="{'tiny-header--show': showTiny}">
+            <div class="container-fluid pos-r z-index-10">
+              <div class="row main-menu__second">
+                <div class="d-flex fd-r jc-sa ai-c">
+                  <span class="hamburger-menu" @click="hideMovilMenu = !hideMovilMenu">
+                    <i class="material-icons">menu</i>
+                  </span>
+                  <span class="d-flex fd-r jc-sa ai-c"><img class="menu-second__logo wh5" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg"
+                      alt=""></span>
+                  <span class="nav-search-icon">
+                    <i @click="showSearchBar = !showSearchBar" class="material-icons">
+                      search
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid pos-a search-bar" :class="{'search-bar--show':showSearchBar}">
+              <div class="row">
+                <div class="col-xs-12">
+                  <input type="text" placeholder="Buscar" class="search-bar__input col-xs-9">
+                  <input type="button" class="col-xs-3 search-bar__button" value="Buscar">
+                </div>
               </div>
             </div>
           </div>
@@ -151,10 +177,10 @@
                 <div class="col-md-7">
                   <!-- Author Article details -->
                   <div class="row article-details mar-l-0">
-                    <div class="col-md-4 category pad-l-0">
+                    <div class="col-xs-6 category pad-l-0">
                       <span>Home / <span class="bold">Decoracion</span></span>
                     </div>
-                    <div class="col-md-6 col-md-offset-2 publication-date pad-r-0 ">
+                    <div class="col-xs-6 publication-date">
                       <span class="f-r publication-date bold">Publicado el edicion Nº305, Julio 2018</span>
                     </div>
                   </div>
@@ -420,18 +446,32 @@
   var app = new Vue({
       el: '#app',
       data: {
-        // hideFirstMenu: false,
+        showTiny: false,
         hideMovilMenu: true,
-        showSearchBar: false
+        showSearchBar: false,
+        currentY: null,
+        prevY: null,
 
+      },
+      mounted () {
+        this.setScroller()
       },
       methods: {
         setScroller () {
-          let bodyScroller = document.querySelector('#app')
-          // window.addEventListener('resize', evt => {
-          //   if (!this.show) {
-          //     return
-          //   }
+          let header = document.querySelector('.header')
+          let headerHeight = header.offsetHeight
+          this.currentY = window.scrollY
+          this.prevY = window.scrollY
+
+          window.addEventListener('scroll', e => {
+            this.prevY = this.currentY
+            this.currentY = window.scrollY
+            if (this.prevY > this.currentY && this.currentY > headerHeight ) {
+              this.showTiny = true
+            } else {
+              this.showTiny = false
+            }
+          })
         },
         setStiker () {
           let mainMenu = document.querySelector('.main-menu')
