@@ -198,6 +198,13 @@ ul, li {
   text-decoration: underline;
   cursor: pointer;
 }
+.list-menu li {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 2.8rem;
+    display: flex;
+    align-items: center;
+}
 
 .main-menu__second {
   background: #DDDDDD;
