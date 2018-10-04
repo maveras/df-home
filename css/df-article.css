@@ -129,6 +129,9 @@ ul, li {
 .font-5 {
   font-family: 'Raleway';
 }
+.italic {
+  font-style: italic
+}
 /* mobile menu*/
 .mobile-menu {
   position: fixed;
@@ -163,7 +166,6 @@ ul, li {
 }
 
 .fix-container {
-  /* position: fixed; */
   width: 100%;
 }
 /* fin mobile menu */
@@ -205,7 +207,9 @@ ul, li {
     display: flex;
     align-items: center;
 }
-
+.pad-menu {
+  padding: 8px 0 8px 0;
+}
 .main-menu__second {
   background: #DDDDDD;
   padding: 1rem 0 1rem 0;
@@ -266,28 +270,14 @@ ul, li {
   top:0px;
   z-index:12;
 }
+.nav-search-icon, .hamburger-menu {
+  cursor: pointer;
+}
 /*  fin tini header */
 .article-content {
   font-family: 'Raleway';
   font-size: 1.7rem;
 }
-.italic {
-  font-style: italic
-}
-
-.nav-search-icon, .hamburger-menu {
-  cursor: pointer;
-}
-
-
-
-.pad-menu {
-  padding: 8px 0 8px 0;
-}
-
-
-
-
 
 .main-title {
   font-size: 6rem;
