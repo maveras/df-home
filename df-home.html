@@ -32,7 +32,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
   <link rel="stylesheet" type="text/css" href="css/df-home.css">
 </head>
-  <title>article</title>
+  <title>Home</title>
   <body>
     <div id="app" class="pos-r">
       <div class="mobile-menu" :class="{'mobile-menu--closed': hideMovilMenu}">
@@ -56,86 +56,61 @@
           </ul>
         </div>
       </div>
-      <div :class="{'fix-containerfix-container': !hideMovilMenu}">
-        <div class="courtain pos-a" @click="hideMovilMenu = !hideMovilMenu" :class="{'courtain--show': !hideMovilMenu}">
-        </div>
-        <header class="header pos-r">
-          <!-- main menu -->
-          <div class="container-fluid pos-r z-index-10">
-            <div class="row main-menu__first">
-              <div class="col-md-4 col-md-offset-7 pad-r-0">
-                <ul class="main-menu__first-list">
-                  <li class="first-menu-list__item "><a href=""><img src="" alt=""></a>CURSOS ED </li>
-                  <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
-                  <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row main-menu__second hidden-xs">
-              <div class="d-flex fd-r ai-c">
-                <div class="col-md-2 col-md-offset-1">
-                  <img class="menu-second__logo" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg"
-                    alt="">
-                </div>
-                <div class="col-md-7 col-md-offset-1 d-flex fd-column bold font-5">
-                  <div class="row pad-menu menu-second-top">
-                    <div class="col-md-12 pad-r-0">
-                      <ul class="d-flex f-dr jc-end list-menu">
-                        <li><a href="">NEWSLETTERS</a> </li>
-                        <li><a href="">EDICION DIGITAL</a> </li>
-                        <li><a href="">INICIAR SESIÓN</a> </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="row pad-menu">
-                    <div class="col-md-12 pad-r-0">
-                      <ul class="d-flex f-dr jc-end list-menu">
-                        <li><a href="">DECORACIÓN</a> </li>
-                        <li><a href="">ARQUITECTURA</a> </li>
-                        <li><a href="">ARTE Y DISEÑO</a> </li>
-                        <li><a href="">GOURMET</a> </li>
-                        <li><a href="">ACTUALIDAD</a> </li>
-                        <li class="menu-second__search"> <i @click="showSearchBar = !showSearchBar" class="material-icons">search</i></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container-fluid pos-r z-index-10">
-            <div class="row main-menu__second visible-xs">
-              <div class="d-flex fd-r jc-sa ai-c">
-                <span class="hamburger-menu" @click="hideMovilMenu = !hideMovilMenu">
-                  <i class="material-icons">menu</i>
-                </span>
-                <span><img class="" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg"
-                    alt=""></span>
-                <span class="nav-search-icon">
-                  <i @click="showSearchBar = !showSearchBar" class="material-icons">
-                    search
-                  </i>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="container-fluid pos-a search-bar" :class="{'search-bar--show':showSearchBar}">
-            <div class="row">
-              <div class="col-xs-12">
-                <input type="text" placeholder="Buscar" class="search-bar__input col-xs-9">
-                <input type="button" class="col-xs-3 search-bar__button" value="Buscar">
-              </div>
-            </div>
-          </div>
-          <div class="tiny-header" :class="{'tiny-header--show': showTiny}">
+      <div class="courtain-out" @click="hideMovilMenu = !hideMovilMenu" :class="{'courtain-out--show': !hideMovilMenu}">
+      </div>
+      <div class="">
+        <div class="header-container container-fluid" style="background-image: url(http://www.serpadres.cl/wp-content/uploads/2018/08/brooke-lark-500141-unsplash-790x527.jpg)">
+          <header class="header pos-r">
+            <!-- main menu -->
             <div class="container-fluid pos-r z-index-10">
-              <div class="row main-menu__second">
+              <div class="row main-menu__first">
+                <div class="col-md-4 col-md-offset-7 pad-r-0">
+                  <ul class="main-menu__first-list">
+                    <li class="first-menu-list__item "><a href=""><img src="" alt=""></a>CURSOS ED </li>
+                    <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
+                    <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row main-menu__second main-menu__second--transparency hidden-xs">
+                <div class="d-flex fd-r ai-c">
+                  <div class="col-md-2 col-md-offset-1">
+                    <img class="menu-second__logo" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg"
+                      alt="">
+                  </div>
+                  <div class="col-md-7 col-md-offset-1 d-flex fd-column bold font-5">
+                    <div class="row pad-menu menu-second-top">
+                      <div class="col-md-12 pad-r-0">
+                        <ul class="d-flex f-dr jc-end list-menu">
+                          <li><a href="">NEWSLETTERS</a> </li>
+                          <li><a href="">EDICION DIGITAL</a> </li>
+                          <li><a href="">INICIAR SESIÓN</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row pad-menu">
+                      <div class="col-md-12 pad-r-0">
+                        <ul class="d-flex f-dr jc-end list-menu">
+                          <li><a href="">DECORACIÓN</a> </li>
+                          <li><a href="">ARQUITECTURA</a> </li>
+                          <li><a href="">ARTE Y DISEÑO</a> </li>
+                          <li><a href="">GOURMET</a> </li>
+                          <li><a href="">ACTUALIDAD</a> </li>
+                          <li class="menu-second__search"> <i @click="showSearchBar = !showSearchBar" class="material-icons">search</i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid pos-r z-index-10">
+              <div class="row main-menu__second visible-xs">
                 <div class="d-flex fd-r jc-sa ai-c">
                   <span class="hamburger-menu" @click="hideMovilMenu = !hideMovilMenu">
                     <i class="material-icons">menu</i>
                   </span>
-                  <span class="d-flex fd-r jc-sa ai-c"><img class="menu-second__logo wh5" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg"
-                      alt=""></span>
+                  <span><img class="" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg" alt=""></span>
                   <span class="nav-search-icon">
                     <i @click="showSearchBar = !showSearchBar" class="material-icons">
                       search
@@ -152,180 +127,63 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- end main menu -->
-        </header>
-        <div class="container">
-          <div class="row">
-            <div class="title col-xs-12 font-1 ta-c italic">
-              <h1 class="main-title "> tradición artesanal</h1>
-            </div>
-          </div>
-          <div class="row slider-container">
-            <div class="col-md-10 col-md-offset-1 col slider--container fade1">
-              <img class="" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Grib_skov.jpg" alt="">
-              <img class="" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Grib_skov.jpg" alt="">
-              <img class="" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Grib_skov.jpg" alt="">
-              <img class="" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Grib_skov.jpg" alt="">
-            </div>
-          </div>
-          <!-- article section 1 -->
-          <div class="main-content row">
-            <div class="col-md-10 col-md-offset-1">
-              <!-- article section 1 -->
-              <div class="row">
-                <div class="col-md-7">
-                  <!-- Author Article details -->
-                  <div class="row article-details mar-l-0">
-                    <div class="col-xs-6 category pad-l-0">
-                      <span>Home / <span class="bold">Decoracion</span></span>
-                    </div>
-                    <div class="col-xs-6 publication-date">
-                      <span class="f-r publication-date bold">Publicado el edicion Nº305, Julio 2018</span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 publicated-by">
-                      <span>Por <span class="bold">Juan Jose Richards</span> | Fotos <span class="bold">Revista Cosas Perú</span>
-                      </span>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="row">
-                    <!-- article resume -->
-                    <div class="col-md-12 resume font-4">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, atque culpa, qui libero blanditiis
-                      ipsum iste suscipit, a laudantium voluptatem cum sunt optio nesciunt temporibus facere placeat itaque
-                      dolores. Molestias!
-                    </div>
-                    <!--  -->
-                    <!-- article part 1 -->
-                    <div class="col-md-12">
-                      <p class="main-article article-content">Ge mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex
-                        esse voluptatem deleniti tempora? Saepe officia quam in el mainnnnn Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio
-                        soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum
-                        dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero,
-                        laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel
-                        mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis
-                        animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe
-                        officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi
-                        unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem
-                        deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex
-                        esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero, laudantium distinctio
-                        soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel mainnnnn Lorem ipsum
-                        dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis animi, sint vero,
-                        laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe officia quam inel
-                        mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi unde ipsum facilis
-                        animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe
-                        officia quam inel mainnnnn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi
-                        unde ipsum facilis animi, sint vero, laudantium distinctio soluta, ipsa dolore ex esse voluptatem
-                        deleniti tempora? Saepe officia quam in.
-                      </p>
-                    </div>
-                    <!--  -->
+            <div class="tiny-header" :class="{'tiny-header--show': showTiny}">
+              <div class="container-fluid pos-r z-index-10">
+                <div class="row main-menu__second">
+                  <div class="d-flex fd-r jc-sa ai-c">
+                    <span class="hamburger-menu" @click="hideMovilMenu = !hideMovilMenu">
+                      <i class="material-icons">menu</i>
+                    </span>
+                    <span class="d-flex fd-r jc-sa ai-c"><img class="menu-second__logo wh5" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg"
+                        alt=""></span>
+                    <span class="nav-search-icon">
+                      <i @click="showSearchBar = !showSearchBar" class="material-icons">
+                        search
+                      </i>
+                    </span>
                   </div>
                 </div>
-                <div class="col-md-5">
-                  <div class="article-banner d-flex f-dr jc-sa">
-                    <img src="images/300x250.png" alt="">
+              </div>
+              <div class="container-fluid pos-a search-bar" :class="{'search-bar--show':showSearchBar}">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" placeholder="Buscar" class="search-bar__input col-xs-9">
+                    <input type="button" class="col-xs-3 search-bar__button" value="Buscar">
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- galeria -->
-        <div class="container-fluid of-hidden article-gallery">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="owl-carousel">
-                            <img src="https://www.capital.cl/wp-content/uploads/2018/09/Econotes478.png" alt="">
-                            <img src="https://www.capital.cl/wp-content/uploads/2018/09/gente-1.jpg" alt="">
-                            <img src="https://www.capital.cl/wp-content/uploads/2018/09/Econotes478.png" alt="">
-                            <img src="https://www.capital.cl/wp-content/uploads/2018/09/gente-1.jpg" alt="">
-                            <img src="https://www.capital.cl/wp-content/uploads/2018/09/Econotes478.png" alt="">
-                            <img src="https://www.capital.cl/wp-content/uploads/2018/09/gente-1.jpg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-        <!-- article section 2 -->
-        <div class="container">
-          <div class="main-content row">
-            <div class="col-md-10 col-md-offset-1">
+            <!-- end main menu -->
+          </header>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-2 title-container">
               <div class="row">
-                <div class="col-md-7">
-                  <div class="row">
-                    <!-- article section 2 -->
-                    <div class="col-md-12">
-                      <p class="article-content">um distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe
-                        officia quam in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quam, modi
-                        itaque labore vitae porro omnis nulla rem harum aspernatur fugiat rerum quia quod aut sequi error
-                        saepe. Enim, eligendi?
-                      </p>
-                    </div>
-                    <!--  -->
-                    <!-- article post image -->
-                    <div class="col-md-12">
-                      <div class="img-article">
-                        <img class="w100" src="https://www.capital.cl/wp-content/uploads/2018/08/Eco-notes-477.jpg" alt="">
-                      </div>
-                    </div>
-                    <!--  -->
-                    <div class="col-md-12">
-                      <p class="article-content">um distinctio soluta, ipsa dolore ex esse voluptatem deleniti tempora? Saepe
-                        officia quam in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quam, modi
-                        itaque labore vitae porro omnis nulla rem harum aspernatur fugiat rerum quia quod aut sequi error
-                        saepe. Enim, eligendi?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <p class="article-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quam, modi
-                    itaque labore vitae porro omnis nulla rem harum aspernatur fugiat rerum quia quod aut sequi error saepe.
-                    Enim, eligendi?</p>
+                <div class="col-md-12">
+                  <span class="edition-date">Edición Nº306, Agosto 2018</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="container bottom-banner d-flex f-dr jc-sa">
-          <img class="w100" src="images/970x200.png" alt="">
-        </div>
-        <!-- related articles -->
-        <div class="container related-articles">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1 d-flex fd-column">
-              <h3 class="related-articles__title">Artículos Relacionados</h3>
-              <div class="related-articles__title__undeline"></div>
               <div class="row">
-                <div class="col-md-5">
-                  <a href="">
-                    <div class="related-article">
-                      <div class="relate-article__header">
-                        <img class="w100" src="https://www.capital.cl/wp-content/uploads/2018/09/Castillo-F-1.jpg" alt="">
-                      </div>
-                      <div class="related-article__title">
-                        <span>Almuerzos primaverales</span>
-                      </div>
-                    </div>
-                  </a>
+                <div class="col-md-12">
+                  <div class="home-title">
+                    <span class="home-title--first italic font-4">Especial</span>
+                    <span class="home-title--second italic font-4">Gourmet</span>
+                  </div>
                 </div>
-                <div class="col-md-5 col-md-offset-2">
-                  <div class="related-article">
-                    <a href="">
-                      <div class="relate-article__header">
-                        <img class="w100" src="https://www.capital.cl/wp-content/uploads/2018/07/exterior.jpg" alt="">
-                      </div>
-                      <div class="related-article__title">
-                        <span>La viña del 2018</span>
-                      </div>
-                    </a>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="home-subtitle font-4">
+                    <span>EXPERTOS EN COCINA Y SUS MEJORES RECETAS </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="title-links">
+                    <ul>
+                      <li><a href="">Ver Edición Digital</a></li>
+                      <li><a href=""></a>Subscribirse a ED</li>
+                    </ul>
                   </div>
                 </div>
               </div>
