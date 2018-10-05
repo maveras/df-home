@@ -331,7 +331,32 @@ ul, li {
   display: block;
   padding-bottom: 0;
 }
+.title-links ul li {
+  color: #B2726C;
+}
+.title-links__edition-btn {
+  background-color: #39878C;
+  padding: 1rem;
+  color: white;
+  margin-right: 3rem;
+  
+}
+.title-links__edition-btn a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.title-links__subs-btn {
+  background-color: #DEEDEF;
+  padding: 1rem;
+  color: black;
+  border: solid 1px #A8D1D4;
+  box-shadow: 2px 2px 6px -2px #333333;
+}
+
 /* fin home title */
+
 /* Modificadores home header */
 
 .article-content {
