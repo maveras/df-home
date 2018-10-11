@@ -39,21 +39,33 @@
         <div class="mobile-menu__logo d-flex ai-c jc-sa">
           <img class="" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg" alt="">
         </div>
-        <div class="mobile-menu--container">
-          <ul class="mobile-menu__list d-flex fd-column">
-            <li class="mobile-menu__list__item"><a href="">NEWSLETTERS</a> </li>
-            <li class="mobile-menu__list__item"><a href="">EDICION DIGITAL</a> </li>
-            <li class="mobile-menu__list__item"><a href="">INICIAR SESIÓN</a> </li>
-          </ul>
-        </div>
-        <div class="mobile-menu--container">
-          <ul class="mobile-menu__list d-flex fd-column">
-            <li class="mobile-menu__list__item"><a href="">DECORACIÓN</a> </li>
-            <li class="mobile-menu__list__item"><a href="">ARQUITECTURA</a> </li>
-            <li class="mobile-menu__list__item"><a href="">ARTE Y DISEÑO</a> </li>
-            <li class="mobile-menu__list__item"><a href="">GOURMET</a> </li>
-            <li class="mobile-menu__list__item"><a href="">ACTUALIDAD</a> </li>
-          </ul>
+        <div class="mobile-master--container">
+          <div class="mobile-menu--container">
+            <ul class="mobile-menu__list d-flex fd-column">
+              <li class="mobile-menu__list__item"><a href="">NEWSLETTERS</a> </li>
+              <li class="mobile-menu__list__item"><a href="">EDICION DIGITAL</a> </li>
+              <li class="mobile-menu__list__item"><a href="">INICIAR SESIÓN</a> </li>
+            </ul>
+          </div>
+          <div class="mobile-menu--container">
+            <ul class="mobile-menu__list d-flex fd-column">
+              <li class="mobile-menu__list__item"><a href="">DECORACIÓN</a> </li>
+              <li class="mobile-menu__list__item"><a href="">ARQUITECTURA</a> </li>
+              <li class="mobile-menu__list__item"><a href="">ARTE Y DISEÑO</a> </li>
+              <li class="mobile-menu__list__item"><a href="">GOURMET</a> </li>
+              <li class="mobile-menu__list__item"><a href="">ACTUALIDAD</a> </li>
+              <li class="mobile-menu__list__item"><a href="">DECORACIÓN</a> </li>
+              <li class="mobile-menu__list__item"><a href="">ARQUITECTURA</a> </li>
+              <li class="mobile-menu__list__item"><a href="">ARTE Y DISEÑO</a> </li>
+              <li class="mobile-menu__list__item"><a href="">GOURMET</a> </li>
+              <li class="mobile-menu__list__item"><a href="">ACTUALIDAD</a> </li>
+              <li class="mobile-menu__list__item"><a href="">DECORACIÓN</a> </li>
+              <li class="mobile-menu__list__item"><a href="">ARQUITECTURA</a> </li>
+              <li class="mobile-menu__list__item"><a href="">ARTE Y DISEÑO</a> </li>
+              <li class="mobile-menu__list__item"><a href="">GOURMET</a> </li>
+              <li class="mobile-menu__list__item"><a href="">ACTUALIDAD</a> </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="courtain-out" @click="hideMovilMenu = !hideMovilMenu" :class="{'courtain-out--show': !hideMovilMenu}">
@@ -276,6 +288,7 @@
             </div>
           </div>
         </div>
+        <!-- highlited article-->
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -288,26 +301,158 @@
                     <div class="col-md-12">
                       <div class="row">
                         <div class="col-md-10 col-md-offset-2">
-                          <div class="highligted">
-                            <span class="tag">directorio</span>
-                            <div class="underline"></div>
-                            <div class="highlighted__title">
-                              <h3>En Niveles</h3>
-                            </div>
-                            <div class="highlighted__content">
-                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consectetur numquam tempora aperiam, autem earum natus velit tempore voluptas modi quod illum amet similique. Laudantium, error. Possimus modi in hic.
-                            </div>
+                          <div class="highlighted">
+                            <span class="d-b tag font-5">Directorio</span>
+                            <div class="quote-underline d-ib quote-underline--3px"></div>
+                            <a class="highlighted__link"href="">
+                              <div>
+                                <h3 class="highlighted__title font-4 italic">En Niveles</h3>
+                              </div>
+                              <div class="highlighted__content font-5">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consectetur numquam tempora aperiam, autem
+                                  earum
+                                  natus velit tempore voluptas modi quod illum amet similique. Laudantium, error. Possimus modi in hic.</p>
+                              </div>
+                            </a>
                           </div>
-                          
-                          
                         </div>
-                      </div>  
+                      </div>
                     </div>
-                    
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <!-- fin highlited -->
+        <!-- place location -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 location-container" style="background-image:url(http://www.serpadres.cl/wp-content/uploads/2018/08/brooke-lark-500141-unsplash-790x527.jpg)">
+              <div class="col-md-2 col-md-offset-2">
+                <div class="location-name font-4 d-flex ai-c">
+                  <span>Casa foa</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="location__detail">
+                  <div class="location__detail__title font-4">
+                    <span>Casa FOA Chile 2018 abre sus puertas en centro cultural multicarmelo</span>
+                  </div>
+                  <div class="location__detail__resume font-5">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus ipsum, magnam neque, sint nihil fuga natus
+                      animi laborum deserunt numquam voluptatem optio vero necessitatibus consequuntur dolorem ab praesentium vitae
+                      ex!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin place location -->
+        <!-- others editions -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="magazine-carousel">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="magazine-container">
+                      <img class="w100" src="http://www.ed.cl/wp-content/uploads/2018/09/113251TapaSuscripcion1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="magazine-details">
+                      <div>
+                        <h3 class="magazine-title font-4 italic">Al sur del mundo</h3>
+                        <div class="title__underline quote-underline"></div>
+                      </div>
+                      <div class="edition__date font-5">
+                        <span>Edicion Nº305 julio 2018</span>
+                      </div>
+                      <div class="magazine__content font-5">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum odio, expedita illo adipisci quia, sequi eius error dolorum, sunt eos perspiciatis id laboriosam? Placeat voluptatibus possimus amet. Reiciendis, ut culpa!</p>
+                      </div>
+                      <div class="magazine__actions">
+                        <a href=""><button class="btn-subs">SUSCRIBIRSE</button></a>
+                        <a href=""><button class="btn-subs btn-subs--grey">VER MÁS EDICIONES</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="magazine-container">
+                      <img class="w100" src="http://www.ed.cl/wp-content/uploads/2018/09/113251TapaSuscripcion1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="magazine-details">
+                      <div>
+                        <h3 class="magazine-title font-4 italic">Chaclayo</h3>
+                        <div class="title__underline quote-underline"></div>
+                      </div>
+                      <div class="edition__date font-5">
+                        <span>Edicion Nº305 julio 2018</span>
+                      </div>
+                      <div class="magazine__content font-5">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum odio, expedita illo adipisci quia, sequi
+                          eius error dolorum, sunt eos perspiciatis id laboriosam? Placeat voluptatibus possimus amet. Reiciendis, ut
+                          culpa!</p>
+                      </div>
+                      <div class="magazine__actions">
+                        <a href=""><button class="btn-subs">SUSCRIBIRSE</button></a>
+                        <a href=""><button class="btn-subs btn-subs--grey">VER MÁS EDICIONES</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin others editions -->
+        <!-- recomendados -->
+        <div class="recommended">
+          <h3 class="recommended__title">RECOMENDADOS</h3>
+        </div>
+        <div class="recommended__magz owl-carousel">
+          <div class="recommended__magz__fix pos-r">
+            <h3 class="recommended__magz-title">BAZAR ED</h3>
+            <div class="recommended__content">
+              <p>BazarEd es un sitio de compras donde encontrarás lo mejor de la móda, diseño arte y decoración. Siempre con
+                productos de exclusividad y calidad propios de la Revista ED</p>
+            </div>
+          </div>
+          <div class="recommended__magz__linked">
+            <a href="">
+              <img class="w100"src="https://cdn.shopify.com/s/files/1/2419/8567/products/AlcuzaAndes2_300x.jpg?v=1535391567" alt="">
+            </a>
+          </div>
+          <div class="recommended__magz__linked">
+            <a href="">
+              <img class="w100"src="https://cdn.shopify.com/s/files/1/2419/8567/products/AlcuzaAndes2_300x.jpg?v=1535391567" alt="">
+            </a>
+          </div>
+          <div class="recommended__magz__linked">
+            <a href="">
+              <img class="w100" src="https://cdn.shopify.com/s/files/1/2419/8567/products/AlcuzaAndes2_300x.jpg?v=1535391567" alt="">
+            </a>
+          </div>
+          <div class="recommended__magz__linked">
+            <a href="">
+              <img class="w100" src="https://cdn.shopify.com/s/files/1/2419/8567/products/AlcuzaAndes2_300x.jpg?v=1535391567" alt="">
+            </a>
+          </div>
+          <div class="recommended__magz__linked">
+            <a href="">
+              <img class="w100" src="https://cdn.shopify.com/s/files/1/2419/8567/products/AlcuzaAndes2_300x.jpg?v=1535391567" alt="">
+            </a>
+          </div>
+          <div class="recommended__magz__linked">
+            <a href="">
+              <img class="w100" src="https://cdn.shopify.com/s/files/1/2419/8567/products/AlcuzaAndes2_300x.jpg?v=1535391567" alt="">
+            </a>
           </div>
         </div>
         <footer class="container-fluid footer">
@@ -392,7 +537,7 @@
 
 <script>
    $(document).ready(function(){
-      $('.fade1').slick({
+      $('.magazine-carousel').slick({
         dots: false,
         fade: true,
         cssEase: 'linear',
