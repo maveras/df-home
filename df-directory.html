@@ -171,29 +171,26 @@
           <!-- end main menu -->
         </header>
       </div>
+      <!-- buscador -->
       <div class="container-fluid search-container">
         <div class="row">
-          <div class="search">
-            <div class="search__title font-4 bold">
-              <h2>Directorio</h2>
-            </div>
-            <div class="search__actions">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-1">
-                  <input type="text" class="search__input w100">
-                </div>
-                <div class="col-md-2">
-                  <a href="">
-                    <input type="button" value="Buscar" class="w100 search-btn">
-                  </a>
-                </div>
-              </div>
+          <div class="col-md-12">
+            <div class="search__title"><h2>Directorio</h2></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-1">
+            <input class="w100 search__input" type="text">
+          </div>
+          <div class="col-md-2">
+            <div class="search">
+              <input class="search-btn" type="button" value="buscar">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
-            <ul class="list-container d-flex f-dr ai-c jc-sa font-5">
+            <ul class="list-container w-100 d-flex f-dr ai-c jc-sa font-5">
               <li><a href="">Muebles</a></li>
               <li><a href="">Cortinas</a></li>
               <li><a href="">Alfombras</a></li>
@@ -209,38 +206,133 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class="row">
-          <!-- <div class="carousel">
+      <!-- fin buscador -->
+      <!-- carousel -->
+      <div class="container-fluid carousel-container">
+        <div class="container product-carousel">
+          <!-- aqui debe ir el ciclo -->
+          <div class="row">
             <div class="col-md-10 col-md-offset-1">
-<div class="carousel-item">
-<div class="row">
-  <div class="col-md-6">
-    <div class="carousel-img">
-      <img src="" alt="">
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="carousel-detail">
-      <div class="detail__header d-flex f-dr ai-c jc-sa">
-        <h2> woooo</h2>
-        <span>alfombras</span>
-      </div>
-      <div class="detail__resume">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae magnam ad earum laboriosam illum adipisci architecto deleniti beatae unde distinctio alias tenetur culpa obcaecati perferendis quis necessitatibus, sequi voluptatem dignissimos?</p>
-      </div>
-      <div class="detail__location">
-        <span>Av. Luis Pasteur 9898 - Local A. Vitacura</span>
-      </div>
-      <div class="points">
-        *****
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="product">
+                    <img class="w100" src="http://www.revistacapital.cl/wp-content/uploads/2017/11/capital-newsletter.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="header-detail font-5 d-flex jc-sb">
+                        <h3 class="header-detail__title italic bold">WOOL</h3>
+                        <div class="category bold">ALFOMBRAS</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="header-detail__resume font-5">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis tempore, asperiores, beatae ipsam ullam sunt
+                          mollitia natus dolorum ratione eos necessitatibus voluptas laudantium hic porro voluptatem quam repellendus culpa
+                          assumenda.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="header-detail__location font-5">
+                        <span class="bold">Av Luis Pasteur 666 - Local A. Vitacura</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="header-detail__dots d-flex jc-sa">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div> -->
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="product">
+                    <img class="w100" src="http://www.revistacapital.cl/wp-content/uploads/2017/11/capital-newsletter.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="header-detail font-5 d-flex jc-sb">
+                        <h3 class="header-detail__title italic bold">WOOL</h3>
+                        <div class="category bold">ALFOMBRAS</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="header-detail__resume font-5">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis tempore, asperiores, beatae ipsam
+                          ullam sunt
+                          mollitia natus dolorum ratione eos necessitatibus voluptas laudantium hic porro voluptatem quam
+                          repellendus culpa
+                          assumenda.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="header-detail__location font-5">
+                        <span class="bold">Av Luis Pasteur 666 - Local A. Vitacura</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="header-detail__dots d-flex jc-sa">
+          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- fon ciclo -->
+        </div>
+      </div>
+      <!-- fin carousel -->
+      <!-- lista productos -->
+      <div class="container-fluid main-products">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-4">
+              <div class="product">
+                <div class="product__header">
+                  <img class="w100" src="http://www.revistacapital.cl/wp-content/uploads/2017/11/capital-newsletter.jpg" alt="">
+                </div>
+                <div class="product__category"><span>Categoria</span></div>
+                <div class="product__name-brand"><span>Nombre Marca</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-3">
+              <div class="product">
+                <div class="product__header">
+                  <img class="w100" src="http://www.revistacapital.cl/wp-content/uploads/2017/11/capital-newsletter.jpg" alt="">
+                </div>
+                <div class="product__category"><span>Categoria</span></div>
+                <div class="product__name-brand"><span>Nombre Marca</span></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <footer class="container-fluid footer">
@@ -326,11 +418,12 @@
 
 <script>
   $(document).ready(function () {
-    $('.magazine-carousel').slick({
-      dots: false,
+    $('.product-carousel').slick({
+      dots: true,
       fade: true,
       cssEase: 'linear',
-      arrows: true,
+      arrows: false,
+      appendDots: $(".header-detail__dots")
       // prevArrow:'<i class="material-icons slick-prev">navigate_before</i>',
       // nextArrow:'<i class="material-icons slick-next">navigate_next</i>',
     });
