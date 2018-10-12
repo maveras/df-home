@@ -545,6 +545,7 @@ ul, li {
     display: none
 }
 .magazine-carousel {
+  padding: 8rem 0;
 }
 .magazine-title {
   font-size: 3.3rem;
@@ -583,11 +584,17 @@ ul, li {
   padding: 4rem 0;
   color: #BC6E6A;
 }
+.recommended__magz {
+  padding-bottom: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .recommended__magz-title {
 	/* transform: rotate(-90deg);
   transform-origin: left top 0;
   float: left; */
   color: #B2726C
+
 }
 .recommended__magz__fix {
   width: 210px;
@@ -602,6 +609,14 @@ ul, li {
 }
 .recommended__content {
   /* padding-left: 3rem; */
+  font-size: 1.2rem;
+}
+/* fin recomendados */
+/* RECOMENDADOS */
+.followus {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center
 }
 /* fin recomendados */
 .main-title {
@@ -660,11 +675,13 @@ ul, li {
   font-weight: bold;
 }
 .related-articles__title__undeline {
-  border-bottom: solid 5px #353535;
-  width: 10%;
-  margin-bottom: 6rem;
+  border-bottom: solid 1px #DDDDDD;
+  width: 100%;
+  margin-bottom: 10rem;
 }
-
+.padd {
+  margin-bottom: 0rem;
+}
 .bottom-banner {
   margin: 3rem auto;
 }
