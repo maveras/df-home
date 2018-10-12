@@ -1,0 +1,412 @@
+<!-- <?php /* Template Name: dh-article */ ?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i|PT+Serif+Caption:400,400i|PT+Serif:400,400i,700,700i|family=Playfair+Display:400,400i,700,700i,900"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Martel:200,300,400,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <!-- owl-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- owl-->
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/df-directory.css">
+</head>
+<title>directory</title>
+
+<body>
+  <div id="app" class="pos-r">
+    <div class="mobile-menu" :class="{'mobile-menu--closed': hideMovilMenu}">
+      <div class="mobile-menu__logo d-flex ai-c jc-sa">
+        <img class="" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg" alt="">
+      </div>
+      <div class="mobile-master--container">
+        <div class="mobile-menu--container">
+          <ul class="mobile-menu__list d-flex fd-column">
+            <li class="mobile-menu__list__item"><a href="">NEWSLETTERS</a> </li>
+            <li class="mobile-menu__list__item"><a href="">EDICION DIGITAL</a> </li>
+            <li class="mobile-menu__list__item"><a href="">INICIAR SESIÓN</a> </li>
+          </ul>
+        </div>
+        <div class="mobile-menu--container">
+          <ul class="mobile-menu__list d-flex fd-column">
+            <li class="mobile-menu__list__item"><a href="">DECORACIÓN</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ARQUITECTURA</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ARTE Y DISEÑO</a> </li>
+            <li class="mobile-menu__list__item"><a href="">GOURMET</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ACTUALIDAD</a> </li>
+            <li class="mobile-menu__list__item"><a href="">DECORACIÓN</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ARQUITECTURA</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ARTE Y DISEÑO</a> </li>
+            <li class="mobile-menu__list__item"><a href="">GOURMET</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ACTUALIDAD</a> </li>
+            <li class="mobile-menu__list__item"><a href="">DECORACIÓN</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ARQUITECTURA</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ARTE Y DISEÑO</a> </li>
+            <li class="mobile-menu__list__item"><a href="">GOURMET</a> </li>
+            <li class="mobile-menu__list__item"><a href="">ACTUALIDAD</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="courtain-out" @click="hideMovilMenu = !hideMovilMenu" :class="{'courtain-out--show': !hideMovilMenu}">
+    </div>
+    <div class="">
+      <div class="header-container pad-l-0 pad-r-0 container-fluid">
+        <header class="header pos-r">
+          <!-- main menu -->
+          <div class="container-fluid pos-r z-index-10">
+            <div class="row main-menu__first">
+              <div class="col-md-4 col-md-offset-7 pad-r-0">
+                <ul class="main-menu__first-list">
+                  <li class="first-menu-list__item "><a href=""><img src="" alt=""></a>CURSOS ED </li>
+                  <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
+                  <li class="first-menu-list__item "><a href=""></a><img src="" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row main-menu__second hidden-xs">
+              <div class="d-flex fd-r ai-c">
+                <div class="col-md-2 col-md-offset-1">
+                  <img class="menu-second__logo" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg"
+                    alt="">
+                </div>
+                <div class="col-md-7 col-md-offset-1 d-flex fd-column bold font-5">
+                  <div class="row pad-menu menu-second-top">
+                    <div class="col-md-12 pad-r-0">
+                      <ul class="d-flex f-dr jc-end list-menu">
+                        <li><a href="">NEWSLETTERS</a> </li>
+                        <li><a href="">EDICION DIGITAL</a> </li>
+                        <li><a href="">INICIAR SESIÓN</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row pad-menu">
+                    <div class="col-md-12 pad-r-0">
+                      <ul class="d-flex f-dr jc-end list-menu">
+                        <li><a href="">DECORACIÓN</a> </li>
+                        <li><a href="">ARQUITECTURA</a> </li>
+                        <li><a href="">ARTE Y DISEÑO</a> </li>
+                        <li><a href="">GOURMET</a> </li>
+                        <li><a href="">ACTUALIDAD</a> </li>
+                        <li class="menu-second__search"> <i @click="showSearchBar = !showSearchBar" class="material-icons">search</i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid pos-r z-index-10">
+            <div class="row main-menu__second visible-xs">
+              <div class="d-flex fd-r jc-sa ai-c">
+                <span class="hamburger-menu" @click="hideMovilMenu = !hideMovilMenu">
+                  <i class="material-icons">menu</i>
+                </span>
+                <span><img class="" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg" alt=""></span>
+                <span class="nav-search-icon">
+                  <i @click="showSearchBar = !showSearchBar" class="material-icons">
+                    search
+                  </i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid pos-a search-bar" :class="{'search-bar--show':showSearchBar}">
+            <div class="row">
+              <div class="col-xs-12">
+                <input type="text" placeholder="Buscar" class="search-bar__input col-xs-9">
+                <input type="button" class="col-xs-3 search-bar__button" value="Buscar">
+              </div>
+            </div>
+          </div>
+          <div class="tiny-header" :class="{'tiny-header--show': showTiny}">
+            <div class="container-fluid pos-r z-index-10">
+              <div class="row main-menu__second">
+                <div class="d-flex fd-r jc-sa ai-c">
+                  <span class="hamburger-menu" @click="hideMovilMenu = !hideMovilMenu">
+                    <i class="material-icons">menu</i>
+                  </span>
+                  <span class="d-flex fd-r jc-sa ai-c"><img class="menu-second__logo wh5" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg"
+                      alt=""></span>
+                  <span class="nav-search-icon">
+                    <i @click="showSearchBar = !showSearchBar" class="material-icons">
+                      search
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid pos-a search-bar" :class="{'search-bar--show':showSearchBar}">
+              <div class="row">
+                <div class="col-xs-12">
+                  <input type="text" placeholder="Buscar" class="search-bar__input col-xs-9">
+                  <input type="button" class="col-xs-3 search-bar__button" value="Buscar">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end main menu -->
+        </header>
+      </div>
+      <div class="container-fluid search-container">
+        <div class="row">
+          <div class="search">
+            <div class="search__title font-4 bold">
+              <h2>Directorio</h2>
+            </div>
+            <div class="search__actions">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-1">
+                  <input type="text" class="search__input w100">
+                </div>
+                <div class="col-md-2">
+                  <a href="">
+                    <input type="button" value="Buscar" class="w100 search-btn">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <ul class="list-container d-flex f-dr ai-c jc-sa font-5">
+              <li><a href="">Muebles</a></li>
+              <li><a href="">Cortinas</a></li>
+              <li><a href="">Alfombras</a></li>
+              <li><a href="">Ventanas</a></li>
+              <li><a href="">Libros</a></li>
+              <li><a href="">Muebles</a></li>
+              <li><a href="">Cortinas</a></li>
+              <li><a href="">Alfombras</a></li>
+              <li><a href="">Ventanas</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="carousel">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="carousel-img">
+                        <img src="" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="carousel-detail">
+                        <div class="detail__header d-flex f-dr ai-c jc-sa">
+                          <h2> woooo</h2>
+                          <span>alfombras</span>
+                        </div>
+                        <div class="detail__resume">
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae magnam ad earum laboriosam illum adipisci architecto deleniti beatae unde distinctio alias tenetur culpa obcaecati perferendis quis necessitatibus, sequi voluptatem dignissimos?</p>
+                        </div>
+                        <div class="detail__location">
+                          <span>Av. Luis Pasteur 9898 - Local A. Vitacura</span>
+                        </div>
+                        <div class="points">
+                          *****
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="container-fluid footer">
+        <div class="row">
+          <div class="col-md-7 footer__left">
+            <div class="row">
+              <div class="col-md-12">
+                <img class="menu-second__logo" src="https://www.ed.cl/wp-content/themes/revista-ed/img/logos/logo-footer.svg"
+                  alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 footer__submenu">
+                <ul class="footer__submenu__list">
+                  <li class="footer__submenu__list-item"><a href=""></a>Quiénes Somos</li>
+                  <li class="footer__submenu__list-item"><a href=""></a>Contacto</li>
+                  <li class="footer__submenu__list-item"><a href=""></a>Presentación Comercial</li>
+                  <li class="footer__submenu__list-item"><a href=""></a>Tarifas de Publicidad ED</li>
+                  <li class="footer__submenu__list-item footer__submenu__list__item--no-margin"><a href=""></a>Tarifas
+                    de
+                    Publicidad
+                    ED.cl</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row footer__connect-to">
+              <div class="col-md-6 connect_to_ed bold font-1">
+                <span>CONECTATE A REVISTA ED</span>
+              </div>
+              <div class="col-md-6">
+                <ul class="d-flex f-dr ai-c">
+                  <li class="connect__icon"><a href=""></a><i class="fab i-fab--face-width fa-facebook-f"></i></li>
+                  <li class="connect__icon"><a href=""></a><i class="fab fa-twitter"></i></li>
+                  <li class="connect__icon"><a href=""></a><i class="fab fa-instagram"></i></li>
+                  <li class="connect__icon"><a href=""></a><i class="fab fa-youtube"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="footer__location col-md-12">
+                <ul>
+                  <li>Badajoz 45, piso 11 -Las Condes, Santiago </li>
+                  <li>Mesa central: 56 - 2 - 23391000</li>
+                  <li>Suscripciones: 56 - 2 - 23391048</li>
+                  <li>Venta Publicitaria: ventas@df.cl</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 footer__right">
+            <div class="row">
+              <div class="col-md-11 font-1 bold col-md-offset-1 footer__right__title">
+                <span>GRUPO DF</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-11 col-md-offset-1 footer__links">
+                <ul>
+                  <li><a href="">Diario Financiero</a></li>
+                  <li><a href="">Revista Capital</a></li>
+                  <li><a href="">The Note</a></li>
+                  <li><a href="">Formación Ejecutiva</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row store-links__container">
+              <div class="col-md-11 col-md-offset-1 d-flex pad-l-0 store-links">
+                <a href="" class="store-links__item"><img src="images/icon-applestore.png" alt=""></a>
+                <a href="" class="store-links__item"><img src="images/icon-googleplay.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- <button @click="hideFirstMenu = !hideFirstMenu">cloick<button>
+          <button @click="setScroller">setscrolcloick<button>
+              <button @click="hideMovilMenu = !hideMovilMenu; ">showMenu<button>
+                  <button @click="showSearchBar = !showSearchBar">showsearch<button> -->
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.magazine-carousel').slick({
+      dots: false,
+      fade: true,
+      cssEase: 'linear',
+      arrows: true,
+      // prevArrow:'<i class="material-icons slick-prev">navigate_before</i>',
+      // nextArrow:'<i class="material-icons slick-next">navigate_next</i>',
+    });
+    $(".owl-carousel").owlCarousel({
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        800: {
+          items: 4,
+          nav: false
+        },
+        1000: {
+          items: 5,
+          nav: false,
+          loop: false
+        }
+      }
+    });
+  });
+</script>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      showTiny: false,
+      hideMovilMenu: true,
+      showSearchBar: false,
+      currentY: null,
+      prevY: null,
+
+    },
+    mounted() {
+      this.setScroller()
+    },
+    methods: {
+      setScroller() {
+        let header = document.querySelector('.header')
+        let headerHeight = header.offsetHeight
+        this.currentY = window.scrollY
+        this.prevY = window.scrollY
+
+        window.addEventListener('scroll', e => {
+          this.prevY = this.currentY
+          this.currentY = window.scrollY
+          // if (this.prevY > this.currentY && this.currentY > headerHeight ) {
+          //   this.showTiny = true
+          // } else {
+          //   this.showTiny = false
+          // }
+          if (this.currentY > headerHeight) {
+            this.showTiny = true
+          } else {
+            this.showTiny = false
+          }
+        })
+      },
+      setStiker() {
+        let mainMenu = document.querySelector('.main-menu')
+        console.log(mainMenu)
+      }
+    },
+    // computed: {},
+    // watch: {
+    // firstName: function (val) {
+    //   this.fullName = val + ' ' + this.lastName
+    // },
+    // lastName: function (val) {
+    //   this.fullName = this.firstName + ' ' + val
+    // }
+    // }
+  })
+</script>
+<script>
+    // document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
+</script>
