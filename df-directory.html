@@ -189,8 +189,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <ul class="list-container w-100 d-flex f-dr ai-c jc-sa font-5">
+          <div class="col-md-10 col-md-offset-1 pos-r container-ul">
+            <ul class="list-container pos-r w-100 d-flex f-dr ai-c jc-sa font-5">
               <li><a href="">Muebles</a></li>
               <li><a href="">Cortinas</a></li>
               <li><a href="">Alfombras</a></li>
@@ -203,6 +203,11 @@
               <li><a href="">Alfombras</a></li>
               <li><a href="">Ventanas</a></li>
             </ul>
+            <div class="arrow pos-a" :class="{'arrow--hide': hideArrow}">
+              <i class="material-icons">
+                play_arrow
+              </i>
+            </div>
           </div>
         </div>
       </div>
@@ -512,12 +517,62 @@
       showSearchBar: false,
       currentY: null,
       prevY: null,
-
+      hideArrow: false
     },
     mounted() {
       this.setScroller()
+      this.scrollerMenu()
+      let el = document.querySelector('.list-container')
+      el.scrollLeft = 999999
+      console.log('eñ nuevo', el.scrollLeft)
     },
     methods: {
+      scrollerMenu() {
+        let el = document.querySelector('.list-container')
+        el.addEventListener('scroll', e => {
+          var $elem = $('.list-container');
+          var newScrollLeft = $elem.scrollLeft(),
+            width = $elem.width(),
+            scrollWidth = $elem.get(0).scrollWidth;
+          var offset = 42;
+          if (scrollWidth - newScrollLeft - width < offset) {
+            this.hideArrow = true
+          } else {
+            this.hideArrow = false
+          }
+          // console.log(container.scrollWidth, container.offsetHeight, container.scrollWidth )
+          // if (container.scrollTop === (container.scrollHeight - container.offsetHeight)) {
+          //   console.log('sisi')
+          // } else {
+          //   console.log('nono')
+          // }
+          // let menu = e.target.scrollWidth
+          // let currentMenuWidth = e.target.clientWidth
+          // let ofset = e.target.offsetWidth
+          // // e.target.scrolleft = 99999
+          // let maxX = e.target.scrolleft
+          // let scrolleft = e.target.scrollLeft
+
+          // scrollHeight: 80
+          // scrollLeft: 0
+          // scrollTop: 0
+          // scrollWidth: 934
+
+          // scrollHeight: 80
+          // scrollLeft: 256
+          // scrollTop: 0
+          // scrollWidth: 934
+
+
+          // console.log(e)
+          // console.log('el current', currentMenuWidth)
+          // console.log('el osfset', ofset)
+          // console.log('el scrolleft', scrolleft)
+          // console.log('el le maxX', maxX)
+
+          // console.log(ofset)
+        })
+      },
       setScroller() {
         let header = document.querySelector('.header')
         let headerHeight = header.offsetHeight

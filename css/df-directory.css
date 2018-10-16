@@ -414,6 +414,12 @@ ul, li {
   overflow-x: auto;
   white-space: nowrap;
 }
+.list-container::-webkit-scrollbar { 
+    /* display: none;  */
+}
+.list-container::-webkit-scrollbar {
+    /* width: 0rem; */
+}
 .list-container > li {
   padding: 1rem;
   color:#5D5D5D;
@@ -422,6 +428,15 @@ ul, li {
 .list-container > li > a {
   color:#5D5D5D;
   font-weight: bold;
+}
+.arrow {
+  top:2.7rem;
+  right: 0;
+  color:#B2726C;
+  opacity: 1;
+}.arrow--hide {
+  opacity: 0;
+  transition: all 0.5 ease
 }
 /* fin listado menu */
 /* CAROUSEL */
