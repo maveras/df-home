@@ -520,6 +520,8 @@
       hideArrow: false
     },
     mounted() {
+
+      this.setResizer()
       this.setScroller()
       this.scrollerMenu()
       let el = document.querySelector('.list-container')
@@ -540,37 +542,20 @@
           } else {
             this.hideArrow = false
           }
-          // console.log(container.scrollWidth, container.offsetHeight, container.scrollWidth )
-          // if (container.scrollTop === (container.scrollHeight - container.offsetHeight)) {
-          //   console.log('sisi')
-          // } else {
-          //   console.log('nono')
-          // }
-          // let menu = e.target.scrollWidth
-          // let currentMenuWidth = e.target.clientWidth
-          // let ofset = e.target.offsetWidth
-          // // e.target.scrolleft = 99999
-          // let maxX = e.target.scrolleft
-          // let scrolleft = e.target.scrollLeft
-
-          // scrollHeight: 80
-          // scrollLeft: 0
-          // scrollTop: 0
-          // scrollWidth: 934
-
-          // scrollHeight: 80
-          // scrollLeft: 256
-          // scrollTop: 0
-          // scrollWidth: 934
-
-
-          // console.log(e)
-          // console.log('el current', currentMenuWidth)
-          // console.log('el osfset', ofset)
-          // console.log('el scrolleft', scrolleft)
-          // console.log('el le maxX', maxX)
-
-          // console.log(ofset)
+        })
+      },
+      setResizer() {
+        window.addEventListener('resize', e => {
+          var $elem = $('.list-container');
+          var newScrollLeft = $elem.scrollLeft(),
+            width = $elem.width(),
+            scrollWidth = $elem.get(0).scrollWidth;
+          var offset = 42;
+          if (scrollWidth - newScrollLeft - width < offset) {
+            this.hideArrow = true
+          } else {
+            this.hideArrow = false
+          }
         })
       },
       setScroller() {
