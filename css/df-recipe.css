@@ -129,6 +129,9 @@ ul, li {
 .font-5 {
   font-family: 'Raleway';
 }
+.font-6 {
+  font-family: 'Playfair Display', serif;
+}
 .italic {
   font-style: italic
 }
@@ -281,11 +284,14 @@ ul, li {
 
 .main-title {
   font-size: 6rem;
-  margin: 5rem;
-  font-family: 'Libre Baskerville', serif;
+  margin: 3.5rem;
+  /* font-family: 'Libre Baskerville', serif; */
 }
-.slider-container {
-  padding: 0 0 4rem 0
+.main-content {
+  margin-top: 4rem;
+}
+.recipe_by {
+  padding-bottom: 3rem;
 }
 .article-details{
   border-bottom: 1px solid #E2E2E2;
@@ -302,32 +308,34 @@ ul, li {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
-.resume {
-  font-size: 2.2rem;
-  color: #353535;
-  margin-bottom: 1.5rem
-}
+
 
 .bold {
   font-weight: bold
 }
-
-.slick-next:before, .slick-prev:before {
-  color: #BC6E6A;
-  font-size: 3rem;
+.category {
+  border-bottom: solid 1px #BABABA;
+  padding: 1rem
 }
-
-.main-article {
-  font-size: 1.7rem;
+.recipe-back {
+  background: #EEEEEE;
+  position: relative;
+  top: -12rem;
 }
-.main-article:first-letter {
-    font-size: 66px;
-    font-family: "Libre Baskerville", serif;
-    color: #B2726C;
-    float: left;
-    margin: 10px 10px 0 0;
-    line-height: 0.8;
-    text-transform: uppercase;
+.recipe-container {
+  padding: 2.5rem 0 4rem 7rem;
+}
+.recipe-detail__ingredients > ul > li{
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+.recipe-step {
+  text-align: right;
+  font-size: 8rem;
+  color: #CD938F;
+}
+.recipe-details {
+  padding:2rem;
 }
 .related-articles__title {
   font-family: 'Raleway';
@@ -338,6 +346,10 @@ ul, li {
   border-bottom: solid 5px #353535;
   width: 10%;
   margin-bottom: 6rem;
+}
+
+.related-articles__title__undeline--padbottom {
+  margin-bottom: 2rem;
 }
 
 .bottom-banner {
@@ -488,7 +500,7 @@ ul, li {
       left: 10px;
     }
     #app {
-      background-color: red;
+      /* background-color: red; */
     }
     .main-title {
       font-size: 4rem;
@@ -512,7 +524,7 @@ ul, li {
       font-size: 4rem;
     }
     #app {
-      background-color: green;
+      /* background-color: green; */
     }
 
 	}
@@ -529,7 +541,7 @@ ul, li {
       font-size: 6rem;
     }
     #app {
-      background-color: blue;
+      /* background-color: blue; */
     }
 	}
 
