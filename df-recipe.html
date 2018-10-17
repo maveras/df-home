@@ -413,44 +413,9 @@
           </div>
         </footer>
       </div>
-      <button @click="hideFirstMenu = !hideFirstMenu">cloick<button>
-          <button @click="setScroller">setscrolcloick<button>
-              <button @click="hideMovilMenu = !hideMovilMenu; ">showMenu<button>
-                  <button @click="showSearchBar = !showSearchBar">showsearch<button>
     </div>
   </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<script>
-   $(document).ready(function(){
-      $('.fade1').slick({
-        dots: false,
-        fade: true,
-        cssEase: 'linear',
-        arrows: true,
-        // prevArrow:'<i class="material-icons slick-prev">navigate_before</i>',
-        // nextArrow:'<i class="material-icons slick-next">navigate_next</i>',
-      });
-      $(".owl-carousel").owlCarousel({
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          800: {
-            items: 2,
-            nav: false
-          },
-          1000: {
-            items: 3,
-            nav: false,
-            loop: false
-          }
-        }
-      });
-    });
-</script>
 <script>
   var app = new Vue({
       el: '#app',
