@@ -526,7 +526,6 @@
       this.scrollerMenu()
       let el = document.querySelector('.list-container')
       el.scrollLeft = 999999
-      console.log('eñ nuevo', el.scrollLeft)
     },
     methods: {
       scrollerMenu() {
@@ -567,11 +566,7 @@
         window.addEventListener('scroll', e => {
           this.prevY = this.currentY
           this.currentY = window.scrollY
-          // if (this.prevY > this.currentY && this.currentY > headerHeight ) {
-          //   this.showTiny = true
-          // } else {
-          //   this.showTiny = false
-          // }
+          
           if (this.currentY > headerHeight) {
             this.showTiny = true
           } else {
@@ -581,18 +576,8 @@
       },
       setStiker() {
         let mainMenu = document.querySelector('.main-menu')
-        console.log(mainMenu)
       }
     },
-    // computed: {},
-    // watch: {
-    // firstName: function (val) {
-    //   this.fullName = val + ' ' + this.lastName
-    // },
-    // lastName: function (val) {
-    //   this.fullName = this.firstName + ' ' + val
-    // }
-    // }
   })
 </script>
 <script>
