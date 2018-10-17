@@ -141,6 +141,9 @@ ul, li {
 .font-5 {
   font-family: 'Raleway';
 }
+.font-6 {
+  font-family: 'Playfair Display', serif;
+}
 .italic {
   font-style: italic
 }
@@ -419,7 +422,7 @@ ul, li {
 }
 .item-title-h {
   margin-bottom: 1rem;
-  font-size: 4.3rem;
+  font-size: 3.3rem;
 }
 .article-item__content {
   font-size:1.55rem;
