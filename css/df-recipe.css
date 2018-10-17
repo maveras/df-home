@@ -330,7 +330,7 @@ ul, li {
   margin-left: 1.5rem;
 }
 .recipe-step {
-  text-align: center;
+  text-align: right;
   font-size: 8rem;
   color: #CD938F;
 }
