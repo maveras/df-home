@@ -129,6 +129,9 @@ ul, li {
 .font-5 {
   font-family: 'Raleway';
 }
+.font-6 {
+  font-family: 'Playfair Display', serif;
+}
 .italic {
   font-style: italic
 }
@@ -282,7 +285,7 @@ ul, li {
 .main-title {
   font-size: 6rem;
   margin: 5rem;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Playfair Display', serif;
 }
 .slider-container {
   padding: 0 0 4rem 0
