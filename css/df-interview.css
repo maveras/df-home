@@ -92,9 +92,21 @@ a.hover {
 .w100 {
   width: 100%;
 }
+.w80 {
+  width: 80%;
+}
+.w70 {
+  width: 70%;
+}
 .wh5 {
   width:50%;
   height:50%;
+}
+.vh80 {
+  height: 80vh;
+}
+.h100 {
+  height: 100%
 }
 .of-hidden {
   overflow: hidden;
