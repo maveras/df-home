@@ -473,6 +473,9 @@ ul, li {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.slick-next {
+  right: -16px;
+}
 /* .owl-carousel .owl-item img {
     display: block;
     height: 100%;
@@ -485,12 +488,12 @@ ul, li {
 
 	/* Custom, iPhone Retina */ 
 	@media only screen and (min-width : 320px) {
-    .slick-next {
+    /* .slick-next {
       right: 10px;
     }
     .slick-prev {
       left: 10px;
-    }
+    } */
     #app {
       /* background-color: red; */
     }
@@ -506,12 +509,12 @@ ul, li {
 	}
 	/* Extra Small Devices, Phones */ 
 	@media only screen and (min-width : 480px) {
-    .slick-next {
+    /* .slick-next {
       right: 0px;
     }
     .slick-prev {
       left: 0px;
-    }
+    } */
     .main-title {
       font-size: 4rem;
     }
@@ -523,17 +526,17 @@ ul, li {
 
 	/* Small Devices, Tablets */
 	@media only screen and (min-width : 768px) {
-     .slick-next {
+     /* .slick-next {
       right: -25px;
     }
     .slick-prev {
       left: -25px;
-    }
+    } */
     .main-title {
       font-size: 6rem;
     }
     #app {
-      background-color: blue;
+      /* background-color: blue; */
     }
 	}
 
