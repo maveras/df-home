@@ -99,6 +99,9 @@ h3, h4 {
 .w100 {
   width: 100%;
 }
+.h100 {
+  height:100%;
+}
 .w80 {
   width: 80%;
 }
@@ -313,6 +316,9 @@ ul, li {
 .slider-container {
   padding: 0 0 4rem 0
 }
+.main-content {
+  margin: 2.5rem 0;
+}
 .article-details{
   border-bottom: 1px solid #E2E2E2;
   padding-bottom: 1.5rem;
@@ -334,6 +340,9 @@ ul, li {
   border: none;
   padding: 1rem 1.5rem;
 
+}
+.actions__buy:hover {
+  text-decoration: underline
 }
 .contact {
   background: #EEEEEE;
@@ -378,13 +387,39 @@ ul, li {
 .action-btn {
   text-align: right;
 }
-.sell-section {
-  margin-top: 3rem;
-}
+
 .actions__prd-price {
   text-transform: uppercase;
   font-weight: bold;
 }
+.sell-section {
+  margin-top: 3rem;
+  background:#F5EAEB;
+}
+.interviewed__products-resume {
+  padding: 4rem 4rem;
+}
+.products-resume__title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.interviewed__underline {
+  border-bottom: 5px solid black;
+  width: 5%;
+  display:inline-block;
+  margin: 1.8rem 0
+
+}
+.product__detail {
+  margin-left: 2rem;
+}
+.product__title {
+  font-size: 1.4rem;
+}
+.product__img > img {
+  box-shadow: 6px 5px 16px 1px rgb(0,0,0,0.2);
+}
+
 
 .actions__prd-price::before {
   content: '| '
@@ -444,6 +479,7 @@ ul, li {
   font-family: 'Raleway';
   font-size: 2rem;
   font-weight: bold;
+  margin: 1.5rem 0;
 }
 .photo-by {
   margin: 2rem;
@@ -455,6 +491,9 @@ ul, li {
     text-align: center;
     margin: 3rem 0;
     font-weight: bold;
+}
+.related-articles {
+  margin-bottom: 2rem;
 }
 .related-articles__title__undeline {
   border-bottom: solid 5px #353535;
@@ -471,7 +510,7 @@ ul, li {
   width: 2%;
   margin: 0 auto;
   border-bottom: solid 5px #B4594E;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
 
 }
 
