@@ -353,7 +353,10 @@ ul, li {
 .home-title {
   /* margin: 0 auto; */
   text-align: center;
-  padding: 8rem 6rem 14rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
 }
 .home-title > h1 {
   font-size: 6rem;
@@ -880,7 +883,7 @@ ul, li {
       /* background-color: red; */
     }
     .home-title {
-      padding: 4rem 3rem 7rem 3rem;
+      /* padding: 4rem 3rem 7rem 3rem; */
     }
     .home-title > h1 {
       font-size: 4rem;
@@ -934,7 +937,8 @@ ul, li {
       /* background-color: blue; */
     }
     .home-title {
-      padding: 8rem 6rem 14rem 6rem;
+      /* padding: 8rem 6rem 14rem 6rem; */
+      height: 50vh;
     }
     .home-title > h1 {
       font-size: 6rem;
