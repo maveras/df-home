@@ -137,6 +137,7 @@ ul, li {
 }
 /* mobile menu*/
 .mobile-menu {
+  overflow-y: auto;
   position: fixed;
   color: red;
   z-index: 200;
