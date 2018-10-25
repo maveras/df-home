@@ -137,6 +137,7 @@ ul, li {
 }
 /* mobile menu*/
 .mobile-menu {
+  overflow-y: auto;
   position: fixed;
   color: red;
   z-index: 200;
@@ -491,7 +492,7 @@ ul, li {
       left: 10px;
     }
     #app {
-      background-color: red;
+      /* background-color: red; */
     }
     .main-title {
       font-size: 4rem;
@@ -515,7 +516,7 @@ ul, li {
       font-size: 4rem;
     }
     #app {
-      background-color: green;
+      /* background-color: green; */
     }
 
 	}
